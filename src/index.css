@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.background {
+  background-image: radial-gradient(#ffffff 2.5px, transparent 2.5px),
+    radial-gradient(#ffffff 2.5px, transparent 2.5px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+  background-color: #b1d2ff;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, #474bff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+.btn {
+    -webkit-border-radius: 24;
+    -moz-border-radius: 24;
+    border-radius: 24px;
+    -webkit-box-shadow: 0px 0px 21px #666666;
+    -moz-box-shadow: 0px 0px 21px #666666;
+    box-shadow: 0px 0px 21px #666666;
+    font-family: Arial;
+    color: #3b113b;
+    font-size: 20px;
+    background: #27e6b6;
+    padding: 5px 100px 5px 100px;
+    border: solid #27e6b6 2px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #2ef5bd;
+    text-decoration: none;
+  }
